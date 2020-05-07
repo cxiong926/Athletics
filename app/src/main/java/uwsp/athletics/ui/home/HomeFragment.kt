@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
 
         val homeLinear: LinearLayout = view.findViewById(R.id.homeImage)
 
-    // gets the context of the activity
+        // gets the context of the activity
         val currentContext = context
         //creates an imageview
         var imgview: ImageView = ImageView(currentContext)

@@ -12,7 +12,6 @@ import com.bumptech.glide.Glide
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.fragment_mfootball.*
 import okhttp3.*
-import org.w3c.dom.Text
 import uwsp.athletics.R
 import java.io.IOException
 
@@ -134,11 +133,10 @@ class MFootballFragment : Fragment() {
                     val awayScore: TextView? = view?.findViewById(R.id.mFootballOppScore)
 
                     // Sets text for both teams' scores
-                    if(scoreReturn[0].result_team_score.isNullOrBlank()){
+                    if (scoreReturn[0].result_team_score.isNullOrBlank()) {
                         homeScore?.text = "-"
                         awayScore?.text = "-"
-                    }
-                    else{
+                    } else {
                         homeScore?.text = scoreReturn[0].result_team_score
                         awayScore?.text = scoreReturn[0].result_opponent_score
                     }
@@ -181,12 +179,11 @@ class MFootballFragment : Fragment() {
 
                     val recentUpcoming: TextView? = view?.findViewById(R.id.mFootballRecent)
 
-                    if (scoreReturn[0].game_status == "A"){
+                    if (scoreReturn[0].game_status == "A") {
                         recentUpcoming?.text = "Upcoming"
-                    }else{
+                    } else {
                         recentUpcoming?.text = "Recent"
                     }
-
 
 
                 })

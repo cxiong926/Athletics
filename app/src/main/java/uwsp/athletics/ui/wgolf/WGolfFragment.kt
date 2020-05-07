@@ -1,20 +1,18 @@
 package uwsp.athletics.ui.wgolf
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.fragment_wgolf.*
 import okhttp3.*
-
 import uwsp.athletics.R
-import uwsp.athletics.ui.wgolf.WGolfPagerAdapter
 import java.io.IOException
 
 class WGolfFragment : Fragment() {
@@ -167,12 +165,11 @@ class WGolfFragment : Fragment() {
                     }
                     val recentUpcoming: TextView? = view?.findViewById(R.id.WGolfRecent)
 
-                    if (scoreReturn[0].game_status == "A"){
+                    if (scoreReturn[0].game_status == "A") {
                         recentUpcoming?.text = "Upcoming"
-                    }else{
+                    } else {
                         recentUpcoming?.text = "Recent"
                     }
-
 
 
                 })

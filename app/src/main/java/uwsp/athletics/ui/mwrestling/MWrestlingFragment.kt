@@ -166,12 +166,11 @@ class MWrestlingFragment : Fragment() {
 
                     val recentUpcoming: TextView? = view?.findViewById(R.id.mWrestlingRecent)
 
-                    if (scoreReturn[0].game_status == "A"){
+                    if (scoreReturn[0].game_status == "A") {
                         recentUpcoming?.text = "Upcoming"
-                    }else{
+                    } else {
                         recentUpcoming?.text = "Recent"
                     }
-
 
 
                 })

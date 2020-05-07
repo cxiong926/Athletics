@@ -1,20 +1,18 @@
 package uwsp.athletics.ui.wbasketball
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.fragment_wbasketball.*
 import okhttp3.*
-
 import uwsp.athletics.R
-import uwsp.athletics.ui.wbasketball.WBasketballPagerAdapter
 import java.io.IOException
 
 class WBasketballFragment : Fragment() {
@@ -136,11 +134,10 @@ class WBasketballFragment : Fragment() {
                     val awayScore: TextView? = view?.findViewById(R.id.wBasketballOppScore)
 
                     // Sets text for both teams' scores
-                    if(scoreReturn[0].result_team_score.isNullOrBlank()){
+                    if (scoreReturn[0].result_team_score.isNullOrBlank()) {
                         homeScore?.text = "-"
                         awayScore?.text = "-"
-                    }
-                    else{
+                    } else {
                         homeScore?.text = scoreReturn[0].result_team_score
                         awayScore?.text = scoreReturn[0].result_opponent_score
                     }
@@ -182,12 +179,11 @@ class WBasketballFragment : Fragment() {
 
                     val recentUpcoming: TextView? = view?.findViewById(R.id.WBasketballRecent)
 
-                    if (scoreReturn[0].game_status == "A"){
+                    if (scoreReturn[0].game_status == "A") {
                         recentUpcoming?.text = "Upcoming"
-                    }else{
+                    } else {
                         recentUpcoming?.text = "Recent"
                     }
-
 
 
                 })

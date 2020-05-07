@@ -1,20 +1,18 @@
 package uwsp.athletics.ui.whockey
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.fragment_whockey.*
 import okhttp3.*
-
 import uwsp.athletics.R
-import uwsp.athletics.ui.whockey.WHockeyPagerAdapter
 import java.io.IOException
 
 class WHockeyFragment : Fragment() {
@@ -136,11 +134,10 @@ class WHockeyFragment : Fragment() {
                     val awayScore: TextView? = view?.findViewById(R.id.wHockeyOppScore)
 
                     // Sets text for both teams' scores
-                    if(scoreReturn[0].result_team_score.isNullOrBlank()){
+                    if (scoreReturn[0].result_team_score.isNullOrBlank()) {
                         homeScore?.text = "-"
                         awayScore?.text = "-"
-                    }
-                    else{
+                    } else {
                         homeScore?.text = scoreReturn[0].result_team_score
                         awayScore?.text = scoreReturn[0].result_opponent_score
                     }
@@ -182,12 +179,11 @@ class WHockeyFragment : Fragment() {
 
                     val recentUpcoming: TextView? = view?.findViewById(R.id.WHockeyRecent)
 
-                    if (scoreReturn[0].game_status == "A"){
+                    if (scoreReturn[0].game_status == "A") {
                         recentUpcoming?.text = "Upcoming"
-                    }else{
+                    } else {
                         recentUpcoming?.text = "Recent"
                     }
-
 
 
                 })

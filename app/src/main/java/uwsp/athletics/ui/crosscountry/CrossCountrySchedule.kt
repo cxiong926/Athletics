@@ -6,17 +6,16 @@ import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
 import android.view.Gravity
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.google.gson.GsonBuilder
 import okhttp3.*
-
 import uwsp.athletics.R
 import java.io.IOException
 
@@ -173,7 +172,6 @@ class CrossCountrySchedule : Fragment() {
 
                             val recap: TextView = TextView(currentContext)
                             gameCompleted = true
-
 
 
                             // Sets the styles of the textview

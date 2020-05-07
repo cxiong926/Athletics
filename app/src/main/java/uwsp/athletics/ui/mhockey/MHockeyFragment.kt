@@ -134,11 +134,10 @@ class MHockeyFragment : Fragment() {
                     val awayScore: TextView? = view?.findViewById(R.id.mHockeyOppScore)
 
                     // Sets text for both teams' scores
-                    if(scoreReturn[0].result_team_score.isNullOrBlank()){
+                    if (scoreReturn[0].result_team_score.isNullOrBlank()) {
                         homeScore?.text = "-"
                         awayScore?.text = "-"
-                    }
-                    else{
+                    } else {
                         homeScore?.text = scoreReturn[0].result_team_score
                         awayScore?.text = scoreReturn[0].result_opponent_score
                     }
@@ -180,12 +179,11 @@ class MHockeyFragment : Fragment() {
 
                     val recentUpcoming: TextView? = view?.findViewById(R.id.mHockeyRecent)
 
-                    if (scoreReturn[0].game_status == "A"){
+                    if (scoreReturn[0].game_status == "A") {
                         recentUpcoming?.text = "Upcoming"
-                    }else{
+                    } else {
                         recentUpcoming?.text = "Recent"
                     }
-
 
 
                 })

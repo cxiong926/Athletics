@@ -6,17 +6,16 @@ import android.graphics.Typeface
 import android.net.Uri
 import android.os.Bundle
 import android.view.Gravity
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.google.gson.GsonBuilder
 import okhttp3.*
-
 import uwsp.athletics.R
 import java.io.IOException
 
@@ -118,7 +117,7 @@ class WGolfCoaches : Fragment() {
                         // Appends the applicable information to create the athlete's description
                         title.append(sidearmReturn.roster[i].name)
                         tv.append(sidearmReturn.roster[i].staffinfo.title + "\n")
-                        if(sidearmReturn.roster[i].staffinfo.email.isNotEmpty() || sidearmReturn.roster[i].staffinfo.phone.isNotEmpty()){
+                        if (sidearmReturn.roster[i].staffinfo.email.isNotEmpty() || sidearmReturn.roster[i].staffinfo.phone.isNotEmpty()) {
                             tv.append("Contact:\n" + sidearmReturn.roster[i].staffinfo.email + "\n" + sidearmReturn.roster[i].staffinfo.phone)
                         }
 

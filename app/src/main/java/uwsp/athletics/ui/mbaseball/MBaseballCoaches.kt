@@ -121,7 +121,7 @@ class MBaseballCoaches : Fragment() {
                         // Appends the applicable information to create the athlete's description
                         title.append(sidearmReturn.roster[i].name)
                         tv.append(sidearmReturn.roster[i].staffinfo.title + "\n")
-                        if(sidearmReturn.roster[i].staffinfo.email.isNotEmpty() || sidearmReturn.roster[i].staffinfo.phone.isNotEmpty()){
+                        if (sidearmReturn.roster[i].staffinfo.email.isNotEmpty() || sidearmReturn.roster[i].staffinfo.phone.isNotEmpty()) {
                             tv.append("Contact:\n" + sidearmReturn.roster[i].staffinfo.email + "\n" + sidearmReturn.roster[i].staffinfo.phone)
                         }
 
