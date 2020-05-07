@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+    </style>
+
+    <!--    changes the overflow icon to the stream icon-->
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:width">40dp</item>
+<!--        <item name="android:src">@drawable/stream</item>-->
+        <item name="android:src">@drawable/ic_stream</item>
+    </style>
+
+    <!--    Tablayout text size style-->
+    <style name="TabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--    this is the header font that's added into app_bar_main-->
+    <style name="headerfont">
+        <item name="android:fontFamily">@font/pointersans</item>
+    </style>
+
+    <style name="sidebarfont">
+        <item name="android:fontFamily">@font/pointersans</item>
+    </style>
+
+
+    <!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">-->
+    <!--        <item name="android:fontFamily">@font/pointersans</item>-->
+
+    <!--    </style>-->
+
+    <!--    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">-->
+    <!--        <item name="android:textColor">@color/colorAccent</item>-->
+    <!--    </style>-->
+
+</resources>

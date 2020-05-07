@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!--    Bobby - update this as pages get added in-->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="uwsp.athletics.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!--    android:icon="@drawable/homeheader"-->
+
+    <!--    android:label="@string/menu_home"-->
+    <fragment
+        android:id="@+id/nav_mBaseball"
+        android:name="uwsp.athletics.ui.mbaseball.MBaseballFragment"
+        android:label="@string/mens_baseball"
+        tools:layout="@layout/fragment_mbaseball" />
+
+    <fragment
+        android:id="@+id/nav_mBasketball"
+        android:name="uwsp.athletics.ui.mbasketball.MBasketballFragment"
+        android:label="@string/mens_basketball"
+        tools:layout="@layout/fragment_mbasketball" />
+
+    <fragment
+        android:id="@+id/nav_mFootball"
+        android:name="uwsp.athletics.ui.mfootball.MFootballFragment"
+        android:label="@string/football"
+        tools:layout="@layout/fragment_mfootball" />
+
+    <fragment
+        android:id="@+id/nav_mHockey"
+        android:name="uwsp.athletics.ui.mhockey.MHockeyFragment"
+        android:label="@string/hockey"
+        tools:layout="@layout/fragment_mhockey" />
+
+    <fragment
+        android:id="@+id/nav_mWrestling"
+        android:name="uwsp.athletics.ui.mwrestling.MWrestlingFragment"
+        android:label="@string/wrestling"
+        tools:layout="@layout/fragment_mwrestling" />
+
+    <fragment
+        android:id="@+id/nav_wBasketball"
+        android:name="uwsp.athletics.ui.wbasketball.WBasketballFragment"
+        android:label="@string/basketball"
+        tools:layout="@layout/fragment_wbasketball" />
+
+    <fragment
+        android:id="@+id/nav_wGolf"
+        android:name="uwsp.athletics.ui.wgolf.WGolfFragment"
+        android:label="@string/golf"
+        tools:layout="@layout/fragment_wgolf" />
+
+    <fragment
+        android:id="@+id/nav_wHockey"
+        android:name="uwsp.athletics.ui.whockey.WHockeyFragment"
+        android:label="@string/hockey"
+        tools:layout="@layout/fragment_whockey" />
+
+    <fragment
+        android:id="@+id/nav_wSoccer"
+        android:name="uwsp.athletics.ui.wsoccer.WSoccerFragment"
+        android:label="@string/soccer"
+        tools:layout="@layout/fragment_wsoccer" />
+
+    <fragment
+        android:id="@+id/nav_wSoftball"
+        android:name="uwsp.athletics.ui.wsoftball.WSoftballFragment"
+        android:label="@string/softball"
+        tools:layout="@layout/fragment_wsoftball" />
+
+    <fragment
+        android:id="@+id/nav_wTennis"
+        android:name="uwsp.athletics.ui.wtennis.WTennisFragment"
+        android:label="@string/tennis"
+        tools:layout="@layout/fragment_wtennis" />
+
+    <fragment
+        android:id="@+id/nav_wVolleyball"
+        android:name="uwsp.athletics.ui.wvolleyball.WVolleyballFragment"
+        android:label="@string/volleyball"
+        tools:layout="@layout/fragment_wvolleyball" />
+
+    <fragment
+        android:id="@+id/nav_wWrestling"
+        android:name="uwsp.athletics.ui.wwrestling.WWrestlingFragment"
+        android:label="@string/wrestling"
+        tools:layout="@layout/fragment_wwrestling" />
+
+    <fragment
+        android:id="@+id/nav_cross"
+        android:name="uwsp.athletics.ui.crosscountry.CrossCountryFragment"
+        android:label="@string/cross"
+        tools:layout="@layout/fragment_cross_country" />
+
+    <fragment
+        android:id="@+id/nav_swim"
+        android:name="uwsp.athletics.ui.swim.SwimFragment"
+        android:label="@string/swim"
+        tools:layout="@layout/fragment_swim" />
+
+    <fragment
+        android:id="@+id/nav_track"
+        android:name="uwsp.athletics.ui.track.TrackFragment"
+        android:label="@string/track"
+        tools:layout="@layout/fragment_track" />
+
+    <fragment
+        android:id="@+id/nav_donate"
+        android:name="uwsp.athletics.ui.donate.DonateFragment"
+        android:label="@string/menu_donate"
+        tools:layout="@layout/fragment_donate" />
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="uwsp.athletics.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="uwsp.athletics.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="uwsp.athletics.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_social"
+        android:name="uwsp.athletics.ui.socialmedia.SocialMediaFragment"
+        android:label="@string/social_media"
+        tools:layout="@layout/fragment_social_media" />
+</navigation>

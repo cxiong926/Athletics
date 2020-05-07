@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/notificationsText">
+
+            <TextView
+                android:id="@+id/notificationsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/pointersansfamily"
+                android:paddingBottom="16px"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/checkbox_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="General"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mBaseball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Baseball"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mBasketball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Basketball"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mCross"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Cross Country"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mFootball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Football"
+                android:textSize="18sp" />
+            <!--            copy just in case-->
+            <!--            <CheckBox-->
+            <!--                android:id="@+id/checkbox_mfootball"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layoutDirection="rtl"-->
+            <!--                android:onClick="onCheckboxClicked"-->
+            <!--                android:paddingBottom="24dp"-->
+            <!--                android:text="Men's Football"-->
+            <!--                android:textSize="18sp" />-->
+
+            <Switch
+                android:id="@+id/checkbox_mHockey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Hockey"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mSwim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Swim"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mTrack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Track"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_mWrestling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Men's Wrestling"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wBasketball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Basketball"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wCross"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Cross Country"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wGolf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Golf"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wHockey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Hockey"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wSoccer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Soccer"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wSwim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Swim"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wTennis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Tennis"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wTrack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Track"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wVolleyBall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's VolleyBall"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/checkbox_wWrestling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:paddingBottom="24dp"
+                android:text="Women's Wrestling"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

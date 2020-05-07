@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wTennisUWSPScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wTennisUWSPPic"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/wTennisOppScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wTennisUWSPScore"
+        tools:text="20" />
+
+    <ImageView
+        android:id="@+id/wTennisUWSPPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/uwsp_team_logo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wTennisUWSPIndicator" />
+
+    <ImageView
+        android:id="@+id/wTennisOppPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/opponent_team_logo"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wTennisUWSPPic" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/wTennisTabLayout"
+        android:layout_width="match_parent"
+        app:tabTextAppearance="@style/TabText"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wTennisDate" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wTennisViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wTennisTabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/wTennisOppTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wTennisOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wTennisOppScore"
+        app:layout_constraintTop_toTopOf="@+id/wTennisUWSPTeam"
+        tools:text="Opponent Name and  Second Line Example" />
+
+    <TextView
+        android:id="@+id/wTennisUWSPTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wTennisUWSPScore"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/wTennisUWSPScore"
+        app:layout_constraintTop_toBottomOf="@+id/wTennisUWSPScore"
+        tools:text="UWSP" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wTennisUWSPPic"
+        app:layout_constraintEnd_toStartOf="@+id/wTennisOppPic"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/wTennisUWSPPic"
+        app:layout_constraintTop_toTopOf="@+id/wTennisUWSPPic" />
+
+    <TextView
+        android:id="@+id/wTennisUWSPIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wTennisOppIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wTennisUWSPIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/wTennisOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wTennisOppScore"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wTennisDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wTennisOppTeam"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/WTennisRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/recent"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

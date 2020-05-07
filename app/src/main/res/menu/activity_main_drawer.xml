@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+        <!--        Change links-->
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/ic_socialmediapx"
+            android:title="@string/social_media" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_donate"
+            android:title="@string/donate" />
+
+
+        <item android:title="@string/mens_sports">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_mBaseball"
+                        android:icon="@drawable/ic_baseball"
+                        android:title="@string/baseball" />
+                    <item
+                        android:id="@+id/nav_mBasketball"
+                        android:icon="@drawable/ic_basketball"
+                        android:title="@string/basketball" />
+                    <item
+                        android:id="@+id/nav_mFootball"
+                        android:icon="@drawable/ic_football"
+                        android:title="@string/football" />
+                    <item
+                        android:id="@+id/nav_mHockey"
+                        android:icon="@drawable/ic_hockey"
+                        android:title="@string/hockey" />
+                    <item
+                        android:id="@+id/nav_mWrestling"
+                        android:icon="@drawable/ic_wrestling"
+                        android:title="@string/wrestling" />
+                </group>
+            </menu>
+
+        </item>
+
+
+        <item android:title="@string/womens_sports">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_wBasketball"
+                        android:icon="@drawable/ic_basketball"
+                        android:title="@string/basketball" />
+
+                    <item
+                        android:id="@+id/nav_wGolf"
+                        android:icon="@drawable/ic_golf"
+                        android:title="@string/golf" />
+                    <item
+                        android:id="@+id/nav_wHockey"
+                        android:icon="@drawable/ic_hockey"
+                        android:title="@string/hockey" />
+                    <item
+                        android:id="@+id/nav_wSoccer"
+                        android:icon="@drawable/ic_soccer"
+                        android:title="@string/soccer" />
+                    <item
+                        android:id="@+id/nav_wSoftball"
+                        android:icon="@drawable/ic_baseball"
+                        android:title="@string/softball" />
+
+                    <item
+                        android:id="@+id/nav_wTennis"
+                        android:icon="@drawable/ic_tennis"
+                        android:title="@string/tennis" />
+
+                    <item
+                        android:id="@+id/nav_wVolleyball"
+                        android:icon="@drawable/ic_volleyball"
+                        android:title="@string/volleyball" />
+                    <item
+                        android:id="@+id/nav_wWrestling"
+                        android:icon="@drawable/ic_wrestling"
+                        android:title="@string/wrestling" />
+                </group>
+            </menu>
+        </item>
+
+
+        <item android:title="@string/coed">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_cross"
+                        android:icon="@drawable/ic_track_cross_country"
+                        android:title="@string/cross" />
+
+                    <item
+                        android:id="@+id/nav_swim"
+                        android:icon="@drawable/ic_swim"
+                        android:title="@string/swim" />
+                    <item
+                        android:id="@+id/nav_track"
+                        android:icon="@drawable/ic_track_cross_country"
+                        android:title="@string/track" />
+                </group>
+            </menu>
+        </item>
+
+
+        <!--  This is ready to code  -->
+        <item android:title="@string/settings">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_notifications"
+                        android:icon="@drawable/ic_menu_manage"
+                        android:title="@string/menu_notifications" />
+                </group>
+            </menu>
+        </item>
+
+    </group>
+</menu>

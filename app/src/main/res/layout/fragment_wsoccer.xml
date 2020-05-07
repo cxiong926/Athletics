@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wSoccerUWSPScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wSoccerUWSPPic"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/wSoccerOppScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wSoccerUWSPScore"
+        tools:text="20" />
+
+    <ImageView
+        android:id="@+id/wSoccerUWSPPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/uwsp_team_logo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wSoccerUWSPIndicator" />
+
+    <ImageView
+        android:id="@+id/wSoccerOppPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/opponent_team_logo"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wSoccerUWSPPic" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/wSoccerTabLayout"
+        android:layout_width="match_parent"
+        app:tabTextAppearance="@style/TabText"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wSoccerDate" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wSoccerViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wSoccerTabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/wSoccerOppTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wSoccerOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wSoccerOppScore"
+        app:layout_constraintTop_toTopOf="@+id/wSoccerUWSPTeam"
+        tools:text="Opponent Name and  Second Line Example" />
+
+    <TextView
+        android:id="@+id/wSoccerUWSPTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wSoccerUWSPScore"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/wSoccerUWSPScore"
+        app:layout_constraintTop_toBottomOf="@+id/wSoccerUWSPScore"
+        tools:text="UWSP" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wSoccerUWSPPic"
+        app:layout_constraintEnd_toStartOf="@+id/wSoccerOppPic"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/wSoccerUWSPPic"
+        app:layout_constraintTop_toTopOf="@+id/wSoccerUWSPPic" />
+
+    <TextView
+        android:id="@+id/wSoccerUWSPIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wSoccerOppIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wSoccerUWSPIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/wSoccerOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wSoccerOppScore"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wSoccerDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wSoccerOppTeam"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/WSoccerRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/recent"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

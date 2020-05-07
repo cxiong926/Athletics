@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wSoftballUWSPScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wSoftballUWSPPic"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/wSoftballOppScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wSoftballUWSPScore"
+        tools:text="20" />
+
+    <ImageView
+        android:id="@+id/wSoftballUWSPPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/uwsp_team_logo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wSoftballUWSPIndicator" />
+
+    <ImageView
+        android:id="@+id/wSoftballOppPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/opponent_team_logo"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wSoftballUWSPPic" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/wSoftballTabLayout"
+        android:layout_width="match_parent"
+        app:tabTextAppearance="@style/TabText"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wSoftballDate" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wSoftballViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wSoftballTabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/wSoftballOppTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wSoftballOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wSoftballOppScore"
+        app:layout_constraintTop_toTopOf="@+id/wSoftballUWSPTeam"
+        tools:text="Opponent Name and  Second Line Example" />
+
+    <TextView
+        android:id="@+id/wSoftballUWSPTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wSoftballUWSPScore"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/wSoftballUWSPScore"
+        app:layout_constraintTop_toBottomOf="@+id/wSoftballUWSPScore"
+        tools:text="UWSP" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wSoftballUWSPPic"
+        app:layout_constraintEnd_toStartOf="@+id/wSoftballOppPic"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/wSoftballUWSPPic"
+        app:layout_constraintTop_toTopOf="@+id/wSoftballUWSPPic" />
+
+    <TextView
+        android:id="@+id/wSoftballUWSPIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wSoftballOppIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wSoftballUWSPIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/wSoftballOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wSoftballOppScore"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wSoftballDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wSoftballOppTeam"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/WSoftballRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/recent"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

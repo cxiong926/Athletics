@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wWrestlingUWSPScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wWrestlingUWSPPic"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/wWrestlingOppScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wWrestlingUWSPScore"
+        tools:text="20" />
+
+    <ImageView
+        android:id="@+id/wWrestlingUWSPPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/uwsp_team_logo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wWrestlingUWSPIndicator" />
+
+    <ImageView
+        android:id="@+id/wWrestlingOppPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/opponent_team_logo"
+        app:layout_constraintEnd_toStartOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/wWrestlingUWSPPic" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/wWrestlingTabLayout"
+        android:layout_width="match_parent"
+        app:tabTextAppearance="@style/TabText"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wWrestlingDate" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wWrestlingViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wWrestlingTabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/wWrestlingOppTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wWrestlingOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wWrestlingOppScore"
+        app:layout_constraintTop_toTopOf="@+id/wWrestlingUWSPTeam"
+        tools:text="Opponent Name and  Second Line Example" />
+
+    <TextView
+        android:id="@+id/wWrestlingUWSPTeam"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/wWrestlingUWSPScore"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/wWrestlingUWSPScore"
+        app:layout_constraintTop_toBottomOf="@+id/wWrestlingUWSPPic"
+        tools:text="UWSP" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wWrestlingUWSPPic"
+        app:layout_constraintEnd_toStartOf="@+id/wWrestlingOppPic"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/wWrestlingUWSPPic"
+        app:layout_constraintTop_toTopOf="@+id/wWrestlingUWSPPic" />
+
+    <TextView
+        android:id="@+id/wWrestlingUWSPIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wWrestlingOppIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wWrestlingUWSPIndicator"
+        app:layout_constraintEnd_toEndOf="@+id/wWrestlingOppScore"
+        app:layout_constraintStart_toStartOf="@+id/wWrestlingOppScore"
+        tools:text="Home/away" />
+
+    <TextView
+        android:id="@+id/wWrestlingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/wWrestlingOppTeam"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/WWrestlingRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/recent"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Athletics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_donate">Donate</string>
+    <string name="menu_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mens_sports">Men\'s Sports</string>
+    <string name="baseball">Baseball</string>
+    <string name="open_stream">View Streams</string>
+    <string name="cross">Cross Country</string>
+    <string name="basketball">Basketball</string>
+
+    <string name="hockey">Hockey</string>
+    <string name="swim">Swim</string>
+    <string name="track">Track and Field</string>
+    <string name="wrestling">Wrestling</string>
+    <string name="golf">Golf</string>
+    <string name="soccer">Soccer</string>
+    <string name="softball">Softball</string>
+    <string name="tennis">Tennis</string>
+    <string name="volleyball">Volleyball</string>
+    <string name="womens_sports">Women\'s Sports</string>
+    <string name="vs">VS</string>
+    <string name="social_media">Social Media</string>
+    <string name="settings">Settings</string>
+    <string name="mens_baseball">Baseball</string>
+    <string name="coed">Coed Sports</string>
+    <string name="donate">Donate</string>
+    <string name="athletics">Pointers Athletics</string>
+    <string name="uwsp">UW-Stevens Point</string>
+    <string name="uwsp_team_logo">UWSP Team Logo</string>
+    <string name="opponent_team_logo">Opponent Team Logo</string>
+    <string name="recent">Recent</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="mens_basketball">Basketball</string>
+    <string name="football">Football</string>
+
+</resources>
